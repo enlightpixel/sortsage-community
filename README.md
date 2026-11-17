@@ -1,6 +1,8 @@
-# SortSage rule templates
+# SortSage for Windows
 
-Copy-first JSON packs for [SortSage for Windows](https://enlightpixel.com/products/sortsage?utm_source=github&utm_medium=referral&utm_campaign=sortsage-rules) by EnlightPixel. Use the packs to preview a small cleanup or as a starting point for your own rules. The SortSage application is sold separately.
+Start with a copy-first rule for your Downloads folder. These JSON packs let you see which files SortSage would copy before you run anything. They require the SortSage desktop app.
+
+[SortSage](https://enlightpixel.com/products/sortsage) · [Official downloads](https://enlightpixel.com/products/sortsage/download) · [EnlightPixel](https://enlightpixel.com/)
 
 | Pack | Matches | Copies to |
 | --- | --- | --- |
@@ -13,4 +15,14 @@ Copy-first JSON packs for [SortSage for Windows](https://enlightpixel.com/produc
 3. Review the imported rules. Enable only the rules under test, keep automatic triggering off, and inspect Dry Run before executing. Check unmatched files too.
 4. Run the rule on the samples and check the new copies. Every pack starts disabled, uses Copy, and requests SmartRename on a collision. Change to a move only after testing and making a backup.
 
-These examples match filenames and extensions. The invoice pack does not read a PDF's contents and the screenshot pack will miss images with a different naming convention. See the [SortSage documentation](https://enlightpixel.com/products/sortsage/docs) and [official downloads](https://enlightpixel.com/products/sortsage/download). The JSON examples are available under MIT.
+These packs match names and extensions. They won't read invoice contents or catch screenshots with different names. [SortSage documentation](https://enlightpixel.com/products/sortsage/docs)
+
+## Check a preview
+
+| Pack | Sample names that should match | Sample name that should stay unmatched |
+| --- | --- | --- |
+| Downloads | `Proposal.pdf`, `Project.zip` | `Notes.txt` |
+| Screenshots | `Screenshot 2026-11-17.png` | `Team photo.png` |
+| Invoices | `Invoice 114.pdf` | `Invoice 114.xlsx` |
+
+To suggest a pack or report a mismatch, open an issue with the pack name, SortSage version, and made-up filenames that reproduce it. Send billing and license questions to [private support](https://enlightpixel.com/contact).
