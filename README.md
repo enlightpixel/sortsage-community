@@ -17,6 +17,16 @@ Start with a copy-first rule for your Downloads folder. These JSON packs let you
 
 These packs match names and extensions. They won't read invoice contents or catch screenshots with different names. [SortSage documentation](https://enlightpixel.com/products/sortsage/docs)
 
+## In the app
+
+Review the rules for your test folder before enabling a pack.
+
+![SortSage Downloads rule library](docs/screenshots/folder-rules.png)
+
+Open Dry Run to check the matched files and their proposed destinations.
+
+![SortSage Dry Run showing proposed operations](docs/screenshots/dry-run.png)
+
 ## Check a preview
 
 | Pack | Sample names that should match | Sample name that should stay unmatched |
