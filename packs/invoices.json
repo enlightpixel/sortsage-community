@@ -1,0 +1,32 @@
+{
+  "format": "sortsage-rules",
+  "version": 1,
+  "rules": [
+    {
+      "id": "invoices-1",
+      "name": "Invoice PDFs",
+      "group": "Invoices",
+      "enabled": false,
+      "auto_trigger": false,
+      "match_mode": "All",
+      "continue_processing": false,
+      "allow_advanced_actions": false,
+      "conditions": [
+        {
+          "NameContains": "invoice"
+        },
+        {
+          "ExtensionIs": "pdf"
+        }
+      ],
+      "actions": [
+        {
+          "CopyTo": [
+            "C:\\SortSage-Review\\Invoices",
+            "SmartRename"
+          ]
+        }
+      ]
+    }
+  ]
+}

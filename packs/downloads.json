@@ -1,0 +1,52 @@
+{
+  "format": "sortsage-rules",
+  "version": 1,
+  "rules": [
+    {
+      "id": "downloads-1",
+      "name": "PDF documents",
+      "group": "Downloads",
+      "enabled": false,
+      "auto_trigger": false,
+      "match_mode": "All",
+      "continue_processing": false,
+      "allow_advanced_actions": false,
+      "conditions": [
+        {
+          "ExtensionIs": "pdf"
+        }
+      ],
+      "actions": [
+        {
+          "CopyTo": [
+            "C:\\SortSage-Review\\PDFs",
+            "SmartRename"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "downloads-2",
+      "name": "ZIP archives",
+      "group": "Downloads",
+      "enabled": false,
+      "auto_trigger": false,
+      "match_mode": "All",
+      "continue_processing": false,
+      "allow_advanced_actions": false,
+      "conditions": [
+        {
+          "ExtensionIs": "zip"
+        }
+      ],
+      "actions": [
+        {
+          "CopyTo": [
+            "C:\\SortSage-Review\\Archives",
+            "SmartRename"
+          ]
+        }
+      ]
+    }
+  ]
+}
